@@ -1,3 +1,170 @@
 body {
     margin: 0;
+    padding: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
 } 
+
+.wrapper{
+    margin-inline: auto;
+ 
+    width: 600px;
+}
+
+header{
+    width: 600px;
+    height: 167px;
+    background: red;
+    margin: 0px;
+}
+
+main{
+    height: 1019px;
+    width: 600px;
+    background:blue;
+    margin: 0px;
+    padding-bottom: 6px;
+}
+
+section{
+   display: flex;
+
+    height: 185px;
+    width: 508px;
+    background: #524a4a;
+    margin:45px;
+    margin-top: 0px;
+}
+
+
+
+.content{
+    background: #000;
+    margin-right:auto;
+    margin-left: 0px;
+
+
+}
+
+.icon{
+    width: 70px;
+    height: 90px;
+    background: #000;
+    margin-bottom: auto;
+    margin-right: 30px;
+    margin-top: 45px;
+}
+h3{
+  
+    background: yellow;
+    font-size: 28px;
+    line-height: 17px;
+    font-weight: 400;
+    margin-inline: 0px;
+
+}
+
+h4{
+    
+    background: brown;
+    font-size: 28px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-block: 8px;
+    margin-inline: 0px;
+}
+
+p{
+    
+    background: green;
+    margin-block: 8px;
+    margin-inline: 0px;
+}
+
+i{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    margin-right: 45px;
+    margin-block: 50px;
+}
+
+.sum{
+    
+    width:508px;
+    height: 319px;
+    margin: 46px;
+    background: #fff;
+
+}
+
+.sumary{
+    display: flex;
+    justify-content: stretch;
+    background: gold;
+}
+
+.right {
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background: blueviolet;
+    
+}
+
+
+
+.left{
+ 
+    margin-right: auto;
+    width: 100%;
+}
+
+.complete{
+    width: 508px;
+    height: 60px;
+    background:#16DB99;
+    margin-block: 53px;
+
+    color: aliceblue;
+}
+
+.remove{
+    font-size: 12px;
+   color:#BBBBBB;
+   border: none;
+   background: transparent;
+   height: fit-content;
+}
+
+#order{
+    text-align: center;
+    margin-inline:auto ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.poz1{
+margin-top:64px;
+margin-bottom: 11px;
+height: 20px;
+}
+
+.poz2{
+margin-top: 11px;
+height: 20px;
+}
+
+.total{
+    border-top: solid 2px #393333;
+    padding-top: 14px;
+    margin-top: 31px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+
+
