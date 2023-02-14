@@ -1,37 +1,96 @@
+
+
 body {
     margin: 0;
     padding: 0px;
+    font-family: 'Verdana';
     font-size: 16px;
     box-sizing: border-box;
+    --btncolor: #16DB99;
+  
 } 
 
 .wrapper{
+    position: relative;
     margin-inline: auto;
  
     width: 600px;
 }
 
+.modal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 292px;
+    margin-left: 38px;
+    margin-right: auto;
+   border-radius: 5px;
+   box-shadow: 0px 0px 30px #131212cc;
+    width: 524px;
+    height: 542px;
+    background: #fff;
+}
+
+.hidden{
+    display: none;
+}
+
+.enter-card{
+    margin-top: 47px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+input{
+    width: 475px;
+    height: 71px;
+    margin: 23px;
+    border: 1.5px solid#757575;
+    border-radius: 5px;
+    padding-left: 26px;
+}
+
+#pay-btn{
+    width: 475px;
+    height: 71px;
+    background: var(--btncolor);
+    color: #fff;
+   margin-inline:24px;
+    margin-top: 23px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border:none;
+}
+
 header{
     width: 600px;
     height: 167px;
-    background: red;
+    background-image: url('images/burg.jpg');
+    
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+
+    
+   
     margin: 0px;
 }
 
 main{
+ 
     height: 1019px;
     width: 600px;
-    background:blue;
     margin: 0px;
     padding-bottom: 6px;
 }
 
 section{
    display: flex;
-
     height: 185px;
     width: 508px;
-    background: #524a4a;
     margin:45px;
     margin-top: 0px;
 }
@@ -39,7 +98,8 @@ section{
 
 
 .content{
-    background: #000;
+    
+  font-family: smythe;
     margin-right:auto;
     margin-left: 0px;
 
@@ -56,7 +116,7 @@ section{
 }
 h3{
   
-    background: yellow;
+  font-family: smythe;
     font-size: 28px;
     line-height: 17px;
     font-weight: 400;
@@ -66,7 +126,7 @@ h3{
 
 h4{
     
-    background: brown;
+   
     font-size: 28px;
     line-height: 24px;
     font-weight: 400;
@@ -76,7 +136,7 @@ h4{
 
 p{
     
-    background: green;
+   
     margin-block: 8px;
     margin-inline: 0px;
 }
@@ -101,7 +161,7 @@ i{
 .sumary{
     display: flex;
     justify-content: stretch;
-    background: gold;
+   
 }
 
 .right {
@@ -111,7 +171,7 @@ i{
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    background: blueviolet;
+    
     
 }
 
@@ -126,10 +186,13 @@ i{
 .complete{
     width: 508px;
     height: 60px;
-    background:#16DB99;
+    background:var(--btncolor);
     margin-block: 53px;
-
+    border-radius: 5px;
     color: aliceblue;
+    font-size: 16px;
+    font-weight: 700;
+    border:none;
 }
 
 .remove{
@@ -141,6 +204,8 @@ i{
 }
 
 #order{
+    
+  font-family: smythe;
     text-align: center;
     margin-inline:auto ;
     margin-top: 0px;
@@ -159,6 +224,8 @@ height: 20px;
 }
 
 .total{
+    
+  font-family: smythe;
     border-top: solid 2px #393333;
     padding-top: 14px;
     margin-top: 31px;
