@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'pacificoregular';
 
+    font-weight: 400;
+    font-style:normal;
+    src: url('webfontkit-20230217-111739/pacifico-regular-webfont.woff'),
+    url('webfontkit-20230217-111739/pacifico-regular-webfont.woff2');
+}
 
 body {
     margin: 0;
     padding: 0px;
-    font-family: 'Verdana';
+    font-family: 'pacificoregular';
     font-size: 16px;
     box-sizing: border-box;
     --btncolor: #16DB99;
@@ -17,22 +24,94 @@ body {
     width: 600px;
 }
 
-.modal{
+#manu{
     position: absolute;
+    margin-top: 750px;
+   margin-left: 250px;
+   border: none;
+   background: none;
+   opacity: 50%;
+   transition: 0.2s;
+  
+}
+
+#manu:hover{
+    opacity: 100%;
+    transition: 0.2s;
+}
+
+
+header{
+
+    width: 600px;
+    height: 167px;
+    background-image: url('images/burg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    z-index: 1;
+    font-size: 40px;
+    text-align: end;
+   
+  
+    /* margin: 0px; */
+}
+
+
+h1{
+    font-family: 'pacificoregular';
+    text-align: center;
+    text-shadow: #948d8d 0 0 10px;
+    margin: 0;
+   padding: 15px;
+  color:rgb(48, 35, 13);
+   font-size: 65px;
+   background: rgba(255, 0, 0, 0.349);
+ 
+  
+
+
+}
+
+main{
+    height: 1019px;
+    width: 600px;
+    margin: 0px;
+    /* margin-top: 167px; */
+    padding-bottom: 6px;
+}
+
+main>section{
+    border-top: 0px;
+}
+
+main>section+section+section{
+    border-bottom: 0px;
+}
+
+.modal{
+    position: fixed;
     display: flex;
     flex-direction: column;
-    margin-top: 292px;
+    margin-top: 52px;
     margin-left: 38px;
     margin-right: auto;
    border-radius: 5px;
    box-shadow: 0px 0px 30px #131212cc;
+   font-family: smythe;
     width: 524px;
     height: 542px;
     background: #fff;
+    z-index: 1;
 }
 
 .hidden{
     display: none;
+}
+
+.invisible{
+    visibility: hidden;
 }
 
 .enter-card{
@@ -65,26 +144,8 @@ input{
     border:none;
 }
 
-header{
-    width: 600px;
-    height: 167px;
-    background-image: url('images/burg.jpg');
-    
-    background-size: cover;
-   
-    background-repeat: no-repeat;
-
-    
-   
-    margin: 0px;
-}
-
-main{
- 
-    height: 1019px;
-    width: 600px;
-    margin: 0px;
-    padding-bottom: 6px;
+button{
+    cursor: pointer;
 }
 
 section{
@@ -93,9 +154,9 @@ section{
     width: 508px;
     margin:45px;
     margin-top: 0px;
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
 }
-
-
 
 .content{
     
@@ -109,14 +170,16 @@ section{
 .icon{
     width: 70px;
     height: 90px;
-    background: #000;
+ 
     margin-bottom: auto;
     margin-right: 30px;
     margin-top: 45px;
+    font-size: 55px;
+    text-align: center;
 }
 h3{
   
-  font-family: smythe;
+  font-family: 'pacificoregular';
     font-size: 28px;
     line-height: 17px;
     font-weight: 400;
@@ -141,20 +204,35 @@ p{
     margin-inline: 0px;
 }
 
-i{
+.add{
     width: 50px;
     height: 50px;
-    background: #000;
+  text-align: center;
     margin-right: 45px;
     margin-block: 50px;
+    border: solid black 1px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.2s;
+   
+}
+
+.add:hover{
+    background: #73d84b96;
+    text-shadow: 0 0 10px var(--btncolor) ;
+    transition: 0.2s;
+    font-size: 10px;
+    border: 3px  green dotted;
 }
 
 .sum{
-    
+  
     width:508px;
     height: 319px;
     margin: 46px;
     background: #fff;
+  
 
 }
 
@@ -163,6 +241,13 @@ i{
     justify-content: stretch;
    
 }
+
+
+.poz1{
+    margin-top: 22px;
+    margin-bottom: 11px;
+    height: 20px;
+    }
 
 .right {
     /* display: flex;
@@ -175,12 +260,17 @@ i{
     
 }
 
-
+.right>:first-child{
+    margin-top:64px;
+}
 
 .left{
  
     margin-right: auto;
     width: 100%;
+}
+.left>:first-child{
+    margin-top:64px;
 }
 
 .complete{
@@ -193,6 +283,7 @@ i{
     font-size: 16px;
     font-weight: 700;
     border:none;
+    font-family: smythe;
 }
 
 .remove{
@@ -212,16 +303,6 @@ i{
     margin-bottom: 0px;
 }
 
-.poz1{
-margin-top:64px;
-margin-bottom: 11px;
-height: 20px;
-}
-
-.poz2{
-margin-top: 11px;
-height: 20px;
-}
 
 .total{
     
@@ -234,4 +315,54 @@ height: 20px;
 
 }
 
+.finish{
+position:absolute;
+    margin-top: 780px;
+    margin-left: 38px;
+    margin-right: auto;
+   border-radius: 5px;
+    width: 524px;
+    height: 120px;
+    background: #ECFDF5;
+    text-align: center;
+    font-family: smythe;
+    font-size: 32px;
+    transform: rotate3d(1turn);
+    transition: 1s;
+    z-index: 1;
+}
+.rate{
+    margin-top: 25px;
+}
+.star{
+    cursor: pointer;
+    background: transparent;
+    opacity: 20%;
+    border: none;
+    filter: blur(1.5px);
+    transition: 0.2s;
+}
+.star:hover{
+   filter:none;
+   opacity: 70%;
+   transition: 0.2s;
+ 
+}
 
+.star-clicked{
+    opacity: 100%;
+    /* box-shadow: 0 0 20px rgb(255, 255, 48) inset; */
+    filter:none;
+    background-image: radial-gradient(circle at 50%,rgb(206, 187, 18),#ECFDF5 80%) ;
+    border:none;
+    transition: 0.2s;
+    cursor: none;
+}
+
+#message{
+    font-family: smythe;
+    color:#065F46;
+    font-weight: 400;
+    font-size: 32px;
+
+}

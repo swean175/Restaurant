@@ -1,87 +1,48 @@
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
        <link rel="stylesheet" href="index.css">
        
     </head>
     <body>
         <div class="wrapper">
-            
-    <div class="modal hidden"><span class="enter-card">Enter Card Details</span>
-        <form id="pay-form" name="card-details">
-<input type="text" id="name" placeholder="Enter your name" name="card-details" aria-label="Enter your name">
-<input type="text" id="card" placeholder="Enter card number" name="card-details" aria-label="Enter card number">
-<input type="text" id="cvv" placeholder="Enter CVV" name="card-details" aria-label="Enter CVV">
-<button id="pay-btn" type="submit" name="card-details">Pay</button>
+            <button id="manu" ><i class="fa-solid fa-ellipsis fa-6x"></i></button>
+          
+
+    <div id="modal" class="modal hidden"><span class="enter-card">Enter Card Details</span>
+        <form id="pay-form">
+<input type="text" id="name" placeholder="Enter your name" name="card-details" aria-label="Enter your name" data-name="" required>
+<input type="text" id="card" placeholder="Enter card number" name="card-details" aria-label="Enter card number" data-card="" required>
+<input type="text" id="cvv" placeholder="Enter CVV" name="card-details" aria-label="Enter CVV" data-cvv="" required>
+<button id="pay-btn" type="submit" name="card-details" data-pay-btn=""></button>
 </form>
     </div>
-            <header></header>
 
-            <main>
-<section>
-   
-    <div class="icon"></div>
-
-     <div class="content">
-    <h3>Piza</h3>
-    <p>pepperoni, mushroom, mozarella</p>
-    <h4>$14</h4>
-</div>
-<i class="add"></i>
-
-</section>
-
-<section>
-   
-
-
-    <div class="icon"></div>
-
-     <div class="content">
-    <h3>hamburger</h3>
-    <p>beef, cheese, lettuce</p>
-    <h4>$12</h4>
-</div>
-<i class="add"></i>
-</section>
-
-<section>
+    <div id = "finish" class="finish hidden">
+        <div id="message"></div>
     
-    <div class="icon"></div>
-
-    <div class="content">
-    <h3>beer</h3>
-    <p>grain, hops, yeast, water</p>
-    <h4>$12</h4>
-</div>
-<i class="add"></i>
-</section>
-
-     <div class="sum">
-
-        <h3 id="order">Your Order</h3>
-        <div class="sumary">
-        <div class="left">
-        
-        <h3 class="poz1">Pizza <button class="remove">remove</button></h3>
-        <h3 class="poz2">Beer<button class="remove">remove</button></h3>
-        <h4 class="total">Total price</h4>
-</div>
-<div class="right">
-    <h3 class="poz1">$14</h3>
-    <h3 class="poz2">$12</h3>
-    <h4 class="total">$26</h4>
-</div>
-</div>
-        <button class="complete" type="submit">Complete order</button>
-     </div>
-</main>
-
-
+        <div class="rate">
+            <button id="star1" class="star" data-star="1">⭐</button>
+            <button id="star2" class="star" data-star="2">⭐</button>
+            <button id="star3" class="star" data-star="3">⭐</button>
+            <button id="star4" class="star" data-star="4">⭐</button>
+            <button id="star5" class="star" data-star="5">⭐</button>
         </div>
-	<script src="index.js" type="module"></script>
+    </div>
+    <header>
+        <h1>Not Only Pizza</h1>
+        
+       </header>
+            <main id="main">
 
-</div>
+              
+            </main>
+           
+      
+          <script src="index.js" type="module"></script>
+          </div>
+
+
     </body>
 </html>
 
